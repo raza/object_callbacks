@@ -1,6 +1,6 @@
 # ObjectCallbacks
 
-I need something similar to BeforeFilters [**https://github.com/IDme/before_filters**] but more than that.
+I needed something similar to BeforeFilters [**https://github.com/IDme/before_filters**] but more than that.
 
 This library allow you to bind before_call and after_call to a Ruby class method, similar to ActiveRecord's callbacks.
 
