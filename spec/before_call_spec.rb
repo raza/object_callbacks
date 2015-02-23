@@ -35,17 +35,17 @@ describe ObjectCallbacks do
   subject { MyClass.new }
   describe '#sleep' do
     it 'calls sit_down' do
-      subject.should_receive(:sit_down)
+      expect(subject).to receive(:sit_down)
       subject.sleep
     end
 
     it 'drinks one glass' do
-      subject.should_receive(:drink_one_glass)
+      expect(subject).to receive(:drink_one_glass)
       subject.sleep
     end
 
     it 'should not drink four glasses' do
-      subject.should_not_receive(:drink_four_glasses)
+      expect(subject).to_not receive(:drink_four_glasses)
       subject.sleep
     end
   end
