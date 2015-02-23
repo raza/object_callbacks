@@ -1,8 +1,12 @@
 # ObjectCallbacks
 
-I needed something similar to BeforeFilters [**https://github.com/IDme/before_filters**] but more than that.
+[![Gem Version](http://img.shields.io/gem/v/twitter.svg)][gem]
 
-This library allow you to bind before_call and after_call to a Ruby class method, similar to ActiveRecord's callbacks.
+Similar to BeforeFilters [**https://github.com/IDme/before_filters**] but more than that.
+Similar to BeforeFilters [**https://github.com/IDme/before_filters**] but more than that, simple functionality than ActiveRecord's callbacks.
+
+The library allows you to bind before_call and after_call to a Ruby class method, similar to ActiveRecord's callbacks.
+The library allows you to bind before_call and after_call to a Ruby class method, similar to ActiveRecord's callbacks.
 
 Similar to ActiveRecord, if you need to termiate execution in before_call just return false.
 
