@@ -1,10 +1,13 @@
 # ObjectCallbacks
 
-I needed something similar to BeforeFilters [**https://github.com/IDme/before_filters**] but more than that.
+[![Gem Version](https://badge.fury.io/rb/object_callbacks.svg)](http://badge.fury.io/rb/object_callbacks)
 
-This library allow you to bind before_call and after_call to a Ruby class method, similar to ActiveRecord's callbacks.
+ActiveRecord's callbacks basic functionality, similar to BeforeFilters [**https://github.com/IDme/before_filters**] gem, with after_call and better :only, and :except clauses control.
 
-Similar to ActiveRecord, if you need to termiate execution in before_call just return false.
+The library allows you to;
+* perform pre conditions on object's method.
+* perform post conditions on object's method.
+* terminate method call in pre conditions just by returning false, similar to ActiveRecord.
 
 ## Installation
 
