@@ -2,6 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/object_callbacks.svg)](http://badge.fury.io/rb/object_callbacks)
 [![Build Status](https://travis-ci.org/raza/object_callbacks.svg)](https://travis-ci.org/raza/object_callbacks)
+[![Code Climate](https://codeclimate.com/github/raza/object_callbacks/badges/gpa.svg)](https://codeclimate.com/github/raza/object_callbacks)
 
 ActiveRecord's callbacks basic functionality, similar to BeforeFilters [**https://github.com/IDme/before_filters**] gem, with after_call and better :only, and :except clauses control.
 
@@ -33,8 +34,8 @@ class MyClass
   extend ObjectCallbacks
 
   before_call :sit_down
-  before_call :drink_one_glass,    only: [:sleep]
-  after_call  :drink_four_glasses, only: [:wake_up]
+  before_call :drink_one_glass,    :only => [:sleep]
+  after_call  :drink_four_glasses, :only => [:wake_up]
 
   def sleep
     puts 'Go to sleep'

@@ -3,10 +3,10 @@ require 'object_callbacks'
 class MyClass
   extend ObjectCallbacks
 
-  before_call :before_callback_1, only: [:action1]
-  before_call :before_callback_2, only: [:action1]
-  before_call :before_callback_3, only: [:action1]
-  after_call  :after_call_1, only: [:action1]
+  before_call :before_callback_1, :only => [:action1]
+  before_call :before_callback_2, :only => [:action1]
+  before_call :before_callback_3, :only => [:action1]
+  after_call  :after_call_1, :only => [:action1]
 
   def action1
     puts 'action1 called'

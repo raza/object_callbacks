@@ -5,8 +5,8 @@ class MyClass
   extend ObjectCallbacks
 
   before_call :sit_down
-  before_call :drink_one_glass,    only: [:sleep]
-  after_call  :drink_four_glasses, only: [:wake_up]
+  before_call :drink_one_glass,    :only => [:sleep]
+  after_call  :drink_four_glasses, :only => [:wake_up]
 
   def sleep
     'Go to sleep'
