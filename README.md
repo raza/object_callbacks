@@ -1,6 +1,7 @@
 # ObjectCallbacks
 
 [![Gem Version](https://badge.fury.io/rb/object_callbacks.svg)](http://badge.fury.io/rb/object_callbacks)
+[![Build Status](https://travis-ci.org/raza/object_callbacks.svg)](https://travis-ci.org/raza/object_callbacks)
 
 ActiveRecord's callbacks basic functionality, similar to BeforeFilters [**https://github.com/IDme/before_filters**] gem, with after_call and better :only, and :except clauses control.
 
