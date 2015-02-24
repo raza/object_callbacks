@@ -68,18 +68,18 @@ module ObjectCallbacks
   end
 
   def callbacks_for_all(callbacks)
-    callbacks.select { |_key, value| value.empty? }.keys
+    callbacks.to_a.select{|key, value| value.empty?}.map(&:first)
   end
 
   def only_callbacks(callbacks, action_name)
-    callbacks.select do |_key, value|
+    callbacks.to_a.select do |_key, value|
       !value[:only].nil? && value[:only].include?(action_name)
-    end.keys
+    end.map(&:first)
   end
 
   def except_callbacks(callbacks, action_name)
-    callbacks.select do |_key, value|
+    callbacks.to_a.select do |_key, value|
       !value[:except].nil? && !value[:except].include?(action_name)
-    end.keys
+    end.map(&:first)
   end
 end

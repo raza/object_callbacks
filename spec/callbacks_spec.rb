@@ -1,5 +1,5 @@
+require 'spec_helper'
 require 'object_callbacks'
-require 'pry'
 
 class MyClass
   extend ObjectCallbacks
