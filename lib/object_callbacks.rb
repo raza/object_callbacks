@@ -68,7 +68,7 @@ module ObjectCallbacks
   end
 
   def callbacks_for_all(callbacks)
-    callbacks.to_a.select{|key, value| value.empty?}.map(&:first)
+    callbacks.to_a.select { |_key, value| value.empty? }.map(&:first)
   end
 
   def only_callbacks(callbacks, action_name)
