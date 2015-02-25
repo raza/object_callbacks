@@ -5,7 +5,7 @@
 [![Code Climate](https://codeclimate.com/github/raza/object_callbacks/badges/gpa.svg)](https://codeclimate.com/github/raza/object_callbacks)
 [![Test Coverage](https://codeclimate.com/github/raza/object_callbacks/badges/coverage.svg)](https://codeclimate.com/github/raza/object_callbacks)
 
-ActiveRecord's callbacks basic functionality, similar to BeforeFilters [**https://github.com/IDme/before_filters**] gem, with after_call and better :only, and :except clauses control.
+ActiveRecord callbacks with basic functionality, inspired by BeforeFilters [**https://github.com/IDme/before_filters**] gem, in which I have introduced an **after_call** method and performed improvments on the **:only** and **:except** clauses control.
 
 The library allows you to;
 * perform pre conditions on object's method.
